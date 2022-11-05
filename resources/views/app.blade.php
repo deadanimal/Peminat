@@ -9,6 +9,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0"> --}}
     <title>Peminat</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @yield('styles')
@@ -23,12 +25,12 @@
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                @if (auth()->user())
+                
                     {{-- <li class="nav-item"><a href="/borang" class="nav-link">Borang</a></li> --}}
                     <li class="nav-item"><a href="/user" class="nav-link">User</a></li>
                     <li class="nav-item"><a href="/poll" class="nav-link">Poll</a></li>
                     <li class="nav-item"><a href="/sekolah" class="nav-link">Sekolah</a></li>
-                @endif
+                
             </ul>
         </header>
     </div>
